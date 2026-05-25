@@ -5,43 +5,43 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", "0"))
-API_HASH = getenv("API_HASH")
+API_ID = int(getenv("API_ID", "14050586"))
+API_HASH = getenv("API_HASH","42a60d9c657b106370c79bb0a8ac560c")
 
 BOT_TOKEN = getenv("BOT_TOKEN")
 BOT_ID = getenv("BOT_ID")
 
-OWNER_USERNAME = getenv("OWNER_USERNAME", "")
-BOT_USERNAME = getenv("BOT_USERNAME", "")
-BOT_NAME = getenv("BOT_NAME", "")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "RishuCoder")
+BOT_USERNAME = getenv("BOT_USERNAME", "AnuuMusic_Bot")
+BOT_NAME = getenv("BOT_NAME", "˹𓆩🎧𓆪 ᴀɴᴜᴜ ꭙ ᴍᴜꜱɪᴄ˼ ♪")
 ASSUSERNAME = getenv("ASSUSERNAME", "")
-BOT_LINK = getenv("BOT_LINK", "https://t.me/PikachuCloneRobot")
+BOT_LINK = getenv("BOT_LINK", "https://t.me/AnuuMusic_Bot")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI")
+MONGO_DB_URI = getenv("MONGO_DB_URI","mongodb+srv://Krishna:pss968048@cluster0.4rfuzro.mongodb.net/?retryWrites=true&w=majority")
 
 YTPROXY_URL = getenv("YTPROXY_URL", 'https://tgapi.xbitcode.com') ## xBit Music Endpoint.
 YT_API_KEY = getenv("YT_API_KEY" , "xbit_l36jZXKzzKHEuGjBv54LzVx2xmjx9tnb" ) ## Your API key like: xbit_10000000xx0233 Get from  https://t.me/tgmusic_apibot
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 17000))
 
-LOGGER_ID    = int(getenv("LOGGER_ID"))
+LOGGER_ID    = int(getenv("LOGGER_ID","-1001992970818"))
 CLONE_LOGGER     = LOGGER_ID
-CLONE_GC         = int(getenv("CLONE_GC", "0"))
-OWNER_ID = int(getenv("OWNER_ID", "0"))
+CLONE_GC         = int(getenv("CLONE_GC", "-1001992970818"))
+OWNER_ID = int(getenv("OWNER_ID", "5738579437"))
 
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Oyeayushh/Preeti.git",
+    "https://github.com/the-matrix9/musicbot",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv("GIT_TOKEN", "")
 
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/PikachuClone")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/PikachuSupports")
-GITHUB = getenv("GITHUB", "")
+GITHUB = getenv("GITHUB", "https://t.me/PikachuSupports")
 
 AUTO_LEAVING_ASSISTANT = getenv("AUTO_LEAVING_ASSISTANT", "False")
 AUTO_LEAVE_ASSISTANT_TIME = int(getenv("ASSISTANT_LEAVE_TIME", "9000"))
