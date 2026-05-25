@@ -12,12 +12,12 @@ hachoir
 heroku3
 httpx
 motor
-numpy
+numpy==2.2.6
 opencv-python-headless
 pytz
-pillow==9.5.0
+Pillow==10.4.0
 psutil
-py-tgcalls==0.9.7
+py-tgcalls==2.2.12
 pykeyboard
 python-dotenv
 pyyaml
@@ -32,3 +32,4 @@ youtube-search
 youtube-search-python
 py-yt-search
 yt-dlp>=2024.0.0
+ntgcalls==2.2.1b3
